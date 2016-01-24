@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-#import os import needed for deploying on cloud9
 
 app = Flask(__name__)
 
@@ -28,6 +27,7 @@ def confirm_form_submission():
     receives data from application-form.html and posts message to application-response.html
     """
     
+    #uses flask request get() to grab form's data
     first_name = request.form.get("firstname")
     last_name = request.form.get("lastname")
     salary = request.form.get("salary")
@@ -44,4 +44,3 @@ def confirm_form_submission():
 if __name__ == "__main__":
     app.run(debug=True)
     #for settings for deploying flask app on cloud9
-    #app.run(debug=True, host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT', 8080)))
