@@ -32,7 +32,6 @@ def confirm_form_submission():
     last_name = request.form.get("lastname")
     salary = request.form.get("salary")
     job = request.form.get("job")
-    print job
     
     submission_msg = """
     Thank you, %s %s , for applying to be a %s. Your
