@@ -1,0 +1,28 @@
+/*your CSS goes here*/
+body {
+    font-family: sans-serif;
+}
+
+p {
+    width: 30%;
+}
+
+img {
+    height: 25%;
+    width: 25%;
+}
+.tagline {
+    font-family: Lucida handwriting,cursive ;
+}
+.form-input {
+    background-color: yellow;
+}
+
+#last-name {
+    font-weight: bold;
+}
+
+#form-instructions {
+    border: solid;
+    padding: 1em;
+           }

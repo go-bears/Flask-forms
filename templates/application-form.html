@@ -1,0 +1,43 @@
+{% extends "base.html" %} 
+
+
+{% block content %} 
+    <section for="introduction-text">
+        <h1 class="heading">Jobs at Ubermelon</h1>
+        <br>
+        <h2 class="tagline">The empire needs people like you!</h2>
+        <p id="form-instructions">Enter your name, salary requirements and the select type of engineering position you're interested in.
+        </p>
+    </section>
+    
+    <!--form that can capture data about the user's
+    first name, last name, job title, and salary requirements. -->
+    <form form_id="job-query" action="/application" method="POST">
+        
+        <label for="field-firstname" id="first-name">First Name:</label>
+        <input class="form-input" type="text" name="firstname" id="field-firstname" placeholder="ex. Mel">
+        <br>
+        
+        <label for="field-firstname" id="last-name">Last Name:</label>
+        <input class="form-input" type="text" name="lastname" id="field-lastname" placeholder="ex. Melotopski">
+        <br>
+        
+        <label for="salary-requirements">Salary Requirements: </label>
+        <input class="form-input" name="salary" type="number" placeholder="ex. 85000">
+        <br>
+
+        <label for="job-type">Please select the job you're interested in?</label>
+            <select class="form-input" name="job" >
+                <option>Select Job</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        <br>
+        
+       
+        <input class="form-input" for="submit-button" type="submit">
+
+    </form>
+
+{% endblock %} 
